@@ -1,27 +1,30 @@
 # start-nestjs
 
-yarn add global @nestjs/cli
-yarn
-yarn run start
-nest g controller cats
-nest g service cats
+yarn add global @nestjs/cli <br/>
+yarn <br/>
+yarn run start <br/>
+nest g controller cats <br/>
+nest g service cats <br/>
 
-yarn add @nestjs/typeorm typeorm pg
-yarn add dotenv
 
-yarn add sequelize sequelize-cli sequelize-typescript
+yarn add @nestjs/typeorm typeorm pg<br/>
+yarn add dotenv<br/>
 
-touch .sequelizerc
-cat >>
-const path = require('path');
+yarn add sequelize sequelize-cli sequelize-typescript<br/>
 
-module.exports = {
-    'seeders-path': path.resolve('src/database', 'seeders'),
-    'migrations-path': path.resolve('src/database', 'migrations'),
-    'config': path.resolve('src/database', 'config.ts'),
-}
+touch .sequelizerc<br/>
+cat >><br/>
+```<br/>
+const path = require('path');<br/>
+
+module.exports = {<br/>
+    'seeders-path': path.resolve('src/database', 'seeders'),<br/>
+    'migrations-path': path.resolve('src/database', 'migrations'),<br/>
+    'config': path.resolve('src/database', 'config.ts'),<br/>
+}<br/>
+```
 <<
 
-yarn sequelize init
+yarn sequelize init<br/>
 
 >>https://github.com/tkssharma/nestjs-advance-course/tree/main/nestjs-sequelize-apis/src
